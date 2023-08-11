@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div>
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT XBIT LABS</h3>
+  <p class="w3-center"><em>Your Trusted Tech Partner</em></p>
+  <p>Welcome to XBIT LABS, your go-to destination for innovative technology solutions. We are a dedicated team of tech enthusiasts, passionate about creating and delivering cutting-edge solutions that empower businesses and individuals alike.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Our Mission</b></p><br>
+      <img src="path/to/mission-image.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Our Mission" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>At XBIT LABS, we are driven by a singular mission: to harness the power of technology to solve real-world challenges and drive innovation. Our team of experts combines technical prowess with creative thinking to deliver solutions that drive results and exceed expectations.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">We Specialize In:</p>
+  <p class="w3-wide"><i class="fa fa-desktop"></i>Web Development</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-mobile"></i>Mobile Apps</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-paint-brush"></i>UI/UX Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+
+<!-- Container (About the Company Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about-company">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center"><em>Empowering Innovations, Enriching Experiences</em></p>
+  <p>At XBIT LABS, we are not just a technology company; we are the architects of innovation and the creators of exceptional digital experiences. Our mission is to drive transformation through cutting-edge solutions that elevate businesses and exceed expectations.</p>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <i class="fa fa-lightbulb-o w3-xxlarge w3-text-orange"></i>
+      <h4>Creative Vision</h4>
+      <p>We are driven by creativity and imagination. Our team of visionary designers, developers, and strategists collaborate to bring unique and captivating concepts to life. From user interfaces to brand identities, we infuse creativity into every project we undertake.</p>
+    </div>
+
+    <div class="w3-col m4">
+      <i class="fa fa-cogs w3-xxlarge w3-text-blue"></i>
+      <h4>Technical Excellence</h4>
+      <p>Technical prowess is at the heart of everything we do. Our experts leverage the latest technologies and coding standards to craft robust and scalable solutions. We excel in web and mobile development, AI, IoT, and more, ensuring our clients stay at the forefront of innovation.</p>
+    </div>
+
+    <div class="w3-col m4">
+      <i class="fa fa-handshake-o w3-xxlarge w3-text-green"></i>
+      <h4>Client-Centric Approach</h4>
+      <p>We believe in building strong and lasting partnerships with our clients. Understanding their unique goals and challenges, we tailor solutions that align with their vision. Our transparent communication, agile processes, and unwavering commitment result in client satisfaction.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <i class="fa fa-globe w3-xxlarge w3-text-purple"></i>
+      <h4>Global Impact</h4>
+      <p>Our work transcends boundaries and makes a global impact. With a diverse clientele spanning various industries and regions, we have a proven track record of delivering solutions that drive growth, enhance efficiency, and create lasting value on a global scale.</p>
+    </div>
+
+    <div class="w3-col m4">
+      <i class="fa fa-heartbeat w3-xxlarge w3-text-red"></i>
+      <h4>Passion for Excellence</h4>
+      <p>Excellence is our hallmark. We are passionate about pushing the boundaries of innovation and setting new benchmarks. Our relentless pursuit of excellence fuels our drive to consistently deliver outstanding solutions that exceed expectations and stand the test of time.</p>
+    </div>
+
+    <div class="w3-col m4">
+      <i class="fa fa-users w3-xxlarge w3-text-teal"></i>
+      <h4>Diverse Team</h4>
+      <p>Our diverse team is our greatest asset. Hailing from various backgrounds and cultures, we bring a rich tapestry of skills and perspectives to the table. This diversity fosters creativity, fosters innovation, and enables us to solve complex challenges with agility and ingenuity.</p>
+    </div>
+  </div>
+
+  <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px">LEARN MORE ABOUT US</button>
+</div>
+
+
+
+<!-- Container (About the Company Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about-company">
+  <h3 class="w3-center">CONTENT DELIVERY</h3>
+
+  <!-- Key Features -->
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Transformative Learning</h3>
+      <p>At XBIT LABS, we believe in transformative learning experiences that empower individuals to acquire practical skills and knowledge essential for the modern world.</p>
+    </div>
+    <div class="w3-col m6">
+      <h3>Expert Educators</h3>
+      <p>Our courses are taught by industry experts and experienced educators who are passionate about sharing their knowledge and insights to inspire the next generation.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Hands-On Projects</h3>
+      <p>Immerse yourself in hands-on projects that simulate real-world scenarios. Apply what you learn and build a strong portfolio to showcase your skills to potential employers.</p>
+    </div>
+    <div class="w3-col m6">
+      <h3>Collaborative Learning</h3>
+      <p>Join a community of learners, collaborate on projects, and engage in discussions. Our interactive learning environment fosters teamwork and peer-to-peer knowledge sharing.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Flexible Learning Paths</h3>
+      <p>Choose from a variety of courses and programs that suit your schedule and learning goals. Our flexible learning paths allow you to tailor your education to your needs.</p>
+    </div>
+    <div class="w3-col m6">
+      <h3>Lifelong Skills</h3>
+      <p>Gain practical skills that last a lifetime. Our comprehensive curriculum equips you with the abilities needed to thrive in your chosen field and adapt to industry changes.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m12">
+      <p><a href="#courses" class="w3-button w3-blue"><i class="fa fa-graduation-cap">&nbsp;</i> Explore Our Courses</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Student Success Stories Section) -->
+<div class="w3-content w3-container w3-padding-64" id="success-stories">
+  <h3 class="w3-center">STUDENT SUCCESS STORIES</h3>
+
+  <!-- Student Success Story Cards -->
+  <div class="w3-row-padding">
+    <div class="w3-col m4">
+      <div class="w3-card w3-padding">
+        <img src="student1.jpg" alt="Student 1">
+        <h4>John Doe</h4>
+        <p>Graduated from our Web Development program and now works as a full-stack developer at a leading tech company.</p>
+      </div>
+    </div>
+    <div class="w3-col m4">
+      <div class="w3-card w3-padding">
+        <img src="student2.jpg" alt="Student 2">
+        <h4>Jane Smith</h4>
+        <p>Completed our Data Science course and successfully transitioned from a marketing role to a data analyst position.</p>
+      </div>
+    </div>
+    <div class="w3-col m4">
+      <div class="w3-card w3-padding">
+        <img src="student3.jpg" alt="Student 3">
+        <h4>Michael Johnson</h4>
+        <p>Enrolled in our Digital Marketing program and now manages online campaigns for various clients.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- More Success Stories -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m12">
+      <p><a href="#contact" class="w3-button w3-green"><i class="fa fa-share-alt">&nbsp;</i> Share Your Success Story</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+<!-- Work Section -->
+<!-- Container (Our Work Section) -->
+<div class="w3-content w3-container w3-padding-64" id="our-work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center"><em>Showcasing Excellence and Innovation</em></p>
+  <p>At XBIT LABS, we have had the privilege of working on a diverse range of projects that showcase our creativity, technical prowess, and commitment to delivering top-notch solutions. Here are some highlights from our portfolio:</p>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+      <img src="/images/project1.jpg" style="width:100%" onclick="openModal(this)" class="w3-hover-opacity" alt="E-Commerce Platform">
+      <h4>E-Commerce Platform</h4>
+      <p>We designed and developed a cutting-edge e-commerce platform for a client in the retail sector. The platform features a user-friendly interface, secure payment gateways, and personalized shopping experiences. Our team integrated advanced search and recommendation algorithms to enhance user engagement and boost sales.</p>
+    </div>
+
+    <div class="w3-col m6">
+      <img src="/images/project2.jpg" style="width:100%" onclick="openModal(this)" class="w3-hover-opacity" alt="Healthcare Management System">
+      <h4>Healthcare Management System</h4>
+      <p>Partnering with a leading healthcare provider, we created a comprehensive management system that streamlines patient records, appointments, and medical billing. The system incorporates robust data security measures and real-time analytics, enabling healthcare professionals to deliver efficient and patient-centric services.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+      <img src="/images/project3.jpg" style="width:100%" onclick="openModal(this)" class="w3-hover-opacity" alt="Smart Home Automation">
+      <h4>Smart Home Automation</h4>
+      <p>We embarked on an innovative project to create a smart home automation solution. Through seamless integration of IoT devices and intelligent control systems, homeowners can manage lighting, security, temperature, and more using a single interface. The system offers energy efficiency, convenience, and enhanced home security.</p>
+    </div>
+
+    <div class="w3-col m6">
+      <img src="/images/project4.jpg" style="width:100%" onclick="openModal(this)" class="w3-hover-opacity" alt="Financial Analytics Dashboard">
+      <h4>Financial Analytics Dashboard</h4>
+      <p>For a financial institution, we developed a sophisticated analytics dashboard that provides real-time insights into market trends, investment portfolios, and risk assessment. The dashboard features interactive data visualizations, predictive modeling, and customizable reporting, empowering financial experts to make informed decisions.</p>
+    </div>
+  </div>
+
+  <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px">EXPLORE MORE PROJECTS</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<!-- Container (Our Skills Section) -->
+<div class="w3-content w3-container w3-padding-64" id="our-skills">
+  <h3 class="w3-center">OUR SKILLS</h3>
+  <p class="w3-center"><em>Mastering the Art of Technology</em></p>
+  <p>At XBIT LABS, we pride ourselves on a wide range of technical skills and expertise that enable us to tackle complex challenges and deliver exceptional results. Our team of dedicated professionals is constantly expanding its skillset to stay at the forefront of technology.</p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-padding-large">
+      <h4>Web Development</h4>
+      <p>We are skilled in creating dynamic and responsive websites that offer seamless user experiences. Our expertise includes HTML, CSS, JavaScript, front-end frameworks (such as React and Vue.js), and back-end technologies (such as Node.js and Django).</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+
+      <h4>Mobile App Development</h4>
+      <p>We design and develop cross-platform mobile applications using technologies like React Native and Flutter. Our apps are user-friendly, efficient, and capable of delivering the desired functionalities.</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h4>Data Science</h4>
+      <p>Our data science team extracts valuable insights from complex datasets to drive informed decision-making. We work with tools like Python, TensorFlow, and scikit-learn to perform data analysis, machine learning, and predictive modeling.</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+      </div>
+
+      <h4>UI/UX Design</h4>
+      <p>We prioritize user-centric design to create interfaces that are visually appealing, intuitive, and user-friendly. Our design process involves wireframing, prototyping, and crafting engaging user experiences.</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Container (Courses/Programs Section) -->
+<div class="w3-content w3-container w3-padding-64" id="courses">
+  <h3 class="w3-center">OUR COURSES</h3>
+  <p class="w3-center"><em>Empowering Minds, Enriching Knowledge</em></p>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m4">
+      <div class="w3-card w3-white w3-padding">
+        <h4 class="w3-center">Web Development Fundamentals</h4>
+        <p>Learn the basics of web development and start building your own websites from scratch. Perfect for beginners looking to enter the world of coding.</p>
+        <p><strong>Duration:</strong> 6 weeks</p>
+        <button class="w3-button w3-block w3-blue w3-text-white">LEARN MORE</button>
+      </div>
+    </div>
+
+    <div class="w3-col m4">
+      <div class="w3-card w3-white w3-padding">
+        <h4 class="w3-center">Data Science Bootcamp</h4>
+        <p>Dive deep into data analysis, machine learning, and data visualization. Unlock insights from data and make data-driven decisions.</p>
+        <p><strong>Duration:</strong> 8 weeks</p>
+        <button class="w3-button w3-block w3-blue w3-text-white">LEARN MORE</button>
+      </div>
+    </div>
+
+    <div class="w3-col m4">
+      <div class="w3-card w3-white w3-padding">
+        <h4 class="w3-center">Digital Marketing Mastery</h4>
+        <p>Master the art of digital marketing and grow your online presence. Learn strategies for social media, SEO, and online advertising.</p>
+        <p><strong>Duration:</strong> 10 weeks</p>
+        <button class="w3-button w3-block w3-blue w3-text-white">LEARN MORE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <div class="w3-card w3-white w3-padding">
+        <h4 class="w3-center">UX/UI Design Essentials</h4>
+        <p>Create user-centered designs and enhance user experiences. Explore user interface design principles and design thinking.</p>
+        <p><strong>Duration:</strong> 6 weeks</p>
+        <button class="w3-button w3-block w3-blue w3-text-white">LEARN MORE</button>
+      </div>
+    </div>
+
+    <div class="w3-col m4">
+      <div class="w3-card w3-white w3-padding">
+        <h4 class="w3-center">Coding Bootcamp</h4>
+        <p>Intensive coding program to equip you with programming skills. Become proficient in multiple programming languages and frameworks.</p>
+        <p><strong>Duration:</strong> 12 weeks</p>
+        <button class="w3-button w3-block w3-blue w3-text-white">LEARN MORE</button>
+      </div>
+    </div>
+
+    <div class="w3-col m4">
+      <div class="w3-card w3-white w3-padding">
+        <h4 class="w3-center">Entrepreneurship Workshop</h4>
+        <p>Unlock the secrets of successful entrepreneurship. Learn how to ideate, validate, and launch your own startup venture.</p>
+        <p><strong>Duration:</strong> 4 weeks</p>
+        <button class="w3-button w3-block w3-blue w3-text-white">LEARN MORE</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:32px">VIEW ALL COURSES</button>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
